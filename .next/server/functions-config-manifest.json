@@ -1,0 +1,13 @@
+{
+  "version": 1,
+  "functions": {
+    "/api/donors": {},
+    "/api/donors/[id]": {},
+    "/api/health": {},
+    "/api/organs": {},
+    "/api/organs/[id]": {},
+    "/api/patients": {},
+    "/api/patients/[id]": {},
+    "/api/reference-data": {}
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "/_global-error/page": "/_global-error",
+  "/_not-found/page": "/_not-found",
+  "/api/donors/[id]/route": "/api/donors/[id]",
+  "/api/donors/route": "/api/donors",
+  "/api/health/route": "/api/health",
+  "/api/organs/[id]/route": "/api/organs/[id]",
+  "/api/organs/route": "/api/organs",
+  "/api/patients/[id]/route": "/api/patients/[id]",
+  "/api/patients/route": "/api/patients",
+  "/api/reference-data/route": "/api/reference-data",
+  "/donors/page": "/donors",
+  "/organs/page": "/organs",
+  "/page": "/",
+  "/patients/page": "/patients"
+}

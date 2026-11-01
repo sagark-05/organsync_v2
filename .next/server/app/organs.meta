@@ -1,0 +1,34 @@
+{
+  "headers": {
+    "x-nextjs-stale-time": "300",
+    "x-nextjs-prerender": "1",
+    "x-next-cache-tags": "_N_T_/layout,_N_T_/organs/layout,_N_T_/organs/page,_N_T_/organs"
+  },
+  "segmentPaths": [
+    "/_tree",
+    "/_full",
+    "/organs/__PAGE__"
+  ],
+  "prefetchHints": {
+    "hints": 64,
+    "slots": {
+      "children": {
+        "hints": 96,
+        "slots": {
+          "children": {
+            "hints": 160,
+            "slots": null
+          }
+        }
+      }
+    }
+  },
+  "routeCache": {
+    "key": "/route-cache/APP_PAGE/7a74e2ce4b6a82929de860fad4693f59d532cc2e671f282eeab55d62494da807/$/organs",
+    "owner": {
+      "kind": "APP_PAGE",
+      "sourceRoute": "/organs/page"
+    },
+    "isFallback": false
+  }
+}
