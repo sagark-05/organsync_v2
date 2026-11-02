@@ -96,7 +96,7 @@ LEFT JOIN compatibility_test ct
         FROM compatibility_test ct2
         WHERE ct2.match_id = m.match_id
         ORDER BY ct2.test_date DESC,
-                 ct2.test_id DESC
+                    ct2.test_id DESC
         LIMIT 1
     );
 

@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import ModuleNavigation from "./ModuleNavigation";
 import { useEffect, useRef, useState } from "react";
 import RecordForm, { labels } from "@/components/forms/RecordForm";
 import RecordsTable from "@/components/tables/RecordsTable";
@@ -68,7 +69,7 @@ export default function ManagementPage({ entity }) {
   }
   const filterValues = entity === "organ" ? ORGAN_STATUSES : BLOOD_GROUPS;
   return <div className="shell management">
-    <header><Link className="brand" href="/"><span className="mark" aria-hidden="true">+</span>OrganSync <small>V2</small></Link><nav aria-label="Management">{["donors", "patients", "organs"].map(name => <Link key={name} href={`/${name}`} aria-current={plural === name ? "page" : undefined}>{name[0].toUpperCase() + name.slice(1)}</Link>)}</nav></header>
+    <header><Link className="brand" href="/"><span className="mark" aria-hidden="true">+</span>OrganSync <small>V2</small></Link><ModuleNavigation current={plural} /></header>
     <main>
       <div className="management-heading"><div><p className="eyebrow">REGISTRY MANAGEMENT</p><h1>{title}</h1><p>Manage fictional demonstration records. This educational system is not for clinical decisions.</p></div><button className="button" disabled={!canWrite || busy || loading} onClick={() => { setSelection({ mode: "create", record: null }); setError(""); setMessage(""); }}>Add {entity}</button></div>
       <aside className="write-notice"><strong>{references.developmentWritesEnabled ? "Local development writes enabled" : "Read-only mode"}</strong><p>Production authentication and role-based authorization are pending. {references.developmentWritesEnabled ? "Enter your development token to enable forms. It stays in this page’s memory." : "Writes require an explicit local development setting and a server-configured token."}</p>{references.developmentWritesEnabled && <label htmlFor="development-token">Development token<input id="development-token" type="password" autoComplete="off" value={token} onChange={e => setToken(e.target.value)} /></label>}</aside>

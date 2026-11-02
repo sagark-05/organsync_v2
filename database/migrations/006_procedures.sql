@@ -89,7 +89,7 @@ BEGIN
     INTO v_compatibility;
 
     IF v_compatibility IS NULL
-       OR v_compatibility <> 'COMPATIBLE' THEN
+        OR v_compatibility <> 'COMPATIBLE' THEN
         SIGNAL SQLSTATE '45000'
         SET MESSAGE_TEXT = 'Compatible assessment required';
     END IF;
@@ -229,7 +229,7 @@ BEGIN
     -- Remove active reservation.
     DELETE FROM active_organ_reservation
     WHERE organ_id = v_organ_id
-      AND allocation_id = p_allocation_id;
+        AND allocation_id = p_allocation_id;
 
     IF ROW_COUNT() <> 1 THEN
         SIGNAL SQLSTATE '45000'
@@ -248,7 +248,7 @@ BEGIN
     UPDATE waiting_list
     SET status = 'ACTIVE'
     WHERE waiting_id = v_waiting_id
-      AND status = 'MATCHED';
+        AND status = 'MATCHED';
 
     INSERT INTO sync_outbox (
         aggregate_type,
@@ -346,7 +346,7 @@ BEGIN
     FOR UPDATE;
 
     IF v_organ_status <> 'RESERVED'
-       OR v_waiting_status <> 'MATCHED' THEN
+        OR v_waiting_status <> 'MATCHED' THEN
         SIGNAL SQLSTATE '45000'
         SET MESSAGE_TEXT = 'Invalid organ or waiting-list state';
     END IF;
@@ -356,7 +356,7 @@ BEGIN
     INTO v_count
     FROM active_organ_reservation
     WHERE organ_id = v_organ_id
-      AND allocation_id = p_allocation_id;
+        AND allocation_id = p_allocation_id;
 
     IF v_count <> 1 THEN
         SIGNAL SQLSTATE '45000'
@@ -423,7 +423,7 @@ BEGIN
 
     DELETE FROM active_organ_reservation
     WHERE organ_id = v_organ_id
-      AND allocation_id = p_allocation_id;
+        AND allocation_id = p_allocation_id;
 
     INSERT INTO sync_outbox (
         aggregate_type,
@@ -469,5 +469,5 @@ SELECT
     ROUTINE_TYPE
 FROM information_schema.ROUTINES
 WHERE ROUTINE_SCHEMA = 'organsync_v2'
-  AND ROUTINE_TYPE = 'PROCEDURE'
+    AND ROUTINE_TYPE = 'PROCEDURE'
 ORDER BY ROUTINE_NAME;

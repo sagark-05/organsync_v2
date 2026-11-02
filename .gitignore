@@ -1,18 +1,25 @@
-# node_modules/
-# .next/
-# out/
-# .env*
-# !.env.example
-# *.log
-
+# Dependencies
 node_modules/
 venv/
 .venv/
 __pycache__/
+
+# Next.js
+.next/
+.next-build/
+.next-phase3g/
+out/
+
+# Environment variables
 .env
 .env.*
 !.env.example
+
+# Build outputs
 dist/
 build/
 coverage/
+.artifacts/
+
+# Logs
 *.log
