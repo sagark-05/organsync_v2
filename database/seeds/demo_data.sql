@@ -147,3 +147,4 @@ SELECT * FROM vw_available_organs;
 SELECT * FROM vw_active_waiting_list;
 
 SELECT * FROM vw_candidate_matches;
+
