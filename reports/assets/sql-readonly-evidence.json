@@ -1,0 +1,317 @@
+{
+  "collectedAt": "2026-11-17T16:15:22.332Z",
+  "readOnly": true,
+  "inventory": {
+    "sql": "SELECT TABLE_NAME,TABLE_TYPE FROM information_schema.TABLES WHERE TABLE_SCHEMA=DATABASE() ORDER BY TABLE_NAME",
+    "rows": [
+      {
+        "TABLE_NAME": "active_organ_reservation",
+        "TABLE_TYPE": "BASE TABLE"
+      },
+      {
+        "TABLE_NAME": "app_session",
+        "TABLE_TYPE": "BASE TABLE"
+      },
+      {
+        "TABLE_NAME": "app_user",
+        "TABLE_TYPE": "BASE TABLE"
+      },
+      {
+        "TABLE_NAME": "audit_log",
+        "TABLE_TYPE": "BASE TABLE"
+      },
+      {
+        "TABLE_NAME": "compatibility_test",
+        "TABLE_TYPE": "BASE TABLE"
+      },
+      {
+        "TABLE_NAME": "donor",
+        "TABLE_TYPE": "BASE TABLE"
+      },
+      {
+        "TABLE_NAME": "medical_record",
+        "TABLE_TYPE": "BASE TABLE"
+      },
+      {
+        "TABLE_NAME": "organ",
+        "TABLE_TYPE": "BASE TABLE"
+      },
+      {
+        "TABLE_NAME": "organ_allocation",
+        "TABLE_TYPE": "BASE TABLE"
+      },
+      {
+        "TABLE_NAME": "organ_match",
+        "TABLE_TYPE": "BASE TABLE"
+      },
+      {
+        "TABLE_NAME": "organ_transplant_record",
+        "TABLE_TYPE": "BASE TABLE"
+      },
+      {
+        "TABLE_NAME": "organ_type",
+        "TABLE_TYPE": "BASE TABLE"
+      },
+      {
+        "TABLE_NAME": "patient",
+        "TABLE_TYPE": "BASE TABLE"
+      },
+      {
+        "TABLE_NAME": "schema_migration",
+        "TABLE_TYPE": "BASE TABLE"
+      },
+      {
+        "TABLE_NAME": "sync_outbox",
+        "TABLE_TYPE": "BASE TABLE"
+      },
+      {
+        "TABLE_NAME": "transplant",
+        "TABLE_TYPE": "BASE TABLE"
+      },
+      {
+        "TABLE_NAME": "transplant_centre",
+        "TABLE_TYPE": "BASE TABLE"
+      },
+      {
+        "TABLE_NAME": "transplant_follow_up",
+        "TABLE_TYPE": "BASE TABLE"
+      },
+      {
+        "TABLE_NAME": "vw_active_waiting_list",
+        "TABLE_TYPE": "VIEW"
+      },
+      {
+        "TABLE_NAME": "vw_available_organs",
+        "TABLE_TYPE": "VIEW"
+      },
+      {
+        "TABLE_NAME": "vw_candidate_matches",
+        "TABLE_TYPE": "VIEW"
+      },
+      {
+        "TABLE_NAME": "vw_dashboard_statistics",
+        "TABLE_TYPE": "VIEW"
+      },
+      {
+        "TABLE_NAME": "vw_latest_compatibility",
+        "TABLE_TYPE": "VIEW"
+      },
+      {
+        "TABLE_NAME": "vw_organ_availability",
+        "TABLE_TYPE": "VIEW"
+      },
+      {
+        "TABLE_NAME": "vw_transplant_summary",
+        "TABLE_TYPE": "VIEW"
+      },
+      {
+        "TABLE_NAME": "waiting_list",
+        "TABLE_TYPE": "BASE TABLE"
+      }
+    ]
+  },
+  "triggers": {
+    "sql": "SELECT TRIGGER_NAME,EVENT_OBJECT_TABLE,ACTION_TIMING,EVENT_MANIPULATION FROM information_schema.TRIGGERS WHERE TRIGGER_SCHEMA=DATABASE() ORDER BY TRIGGER_NAME",
+    "rows": [
+      {
+        "TRIGGER_NAME": "trg_allocation_evidence_guard",
+        "EVENT_OBJECT_TABLE": "organ_allocation",
+        "ACTION_TIMING": "BEFORE",
+        "EVENT_MANIPULATION": "INSERT"
+      },
+      {
+        "TRIGGER_NAME": "trg_allocation_transition_guard",
+        "EVENT_OBJECT_TABLE": "organ_allocation",
+        "ACTION_TIMING": "BEFORE",
+        "EVENT_MANIPULATION": "UPDATE"
+      },
+      {
+        "TRIGGER_NAME": "trg_allocation_validate_insert",
+        "EVENT_OBJECT_TABLE": "organ_allocation",
+        "ACTION_TIMING": "BEFORE",
+        "EVENT_MANIPULATION": "INSERT"
+      },
+      {
+        "TRIGGER_NAME": "trg_compatibility_immutable_delete",
+        "EVENT_OBJECT_TABLE": "compatibility_test",
+        "ACTION_TIMING": "BEFORE",
+        "EVENT_MANIPULATION": "DELETE"
+      },
+      {
+        "TRIGGER_NAME": "trg_compatibility_immutable_update",
+        "EVENT_OBJECT_TABLE": "compatibility_test",
+        "ACTION_TIMING": "BEFORE",
+        "EVENT_MANIPULATION": "UPDATE"
+      },
+      {
+        "TRIGGER_NAME": "trg_compatibility_insert_guard",
+        "EVENT_OBJECT_TABLE": "compatibility_test",
+        "ACTION_TIMING": "BEFORE",
+        "EVENT_MANIPULATION": "INSERT"
+      },
+      {
+        "TRIGGER_NAME": "trg_follow_up_immutable_delete",
+        "EVENT_OBJECT_TABLE": "transplant_follow_up",
+        "ACTION_TIMING": "BEFORE",
+        "EVENT_MANIPULATION": "DELETE"
+      },
+      {
+        "TRIGGER_NAME": "trg_follow_up_immutable_update",
+        "EVENT_OBJECT_TABLE": "transplant_follow_up",
+        "ACTION_TIMING": "BEFORE",
+        "EVENT_MANIPULATION": "UPDATE"
+      },
+      {
+        "TRIGGER_NAME": "trg_follow_up_insert_guard",
+        "EVENT_OBJECT_TABLE": "transplant_follow_up",
+        "ACTION_TIMING": "BEFORE",
+        "EVENT_MANIPULATION": "INSERT"
+      },
+      {
+        "TRIGGER_NAME": "trg_match_transition_guard",
+        "EVENT_OBJECT_TABLE": "organ_match",
+        "ACTION_TIMING": "BEFORE",
+        "EVENT_MANIPULATION": "UPDATE"
+      },
+      {
+        "TRIGGER_NAME": "trg_match_validate_insert",
+        "EVENT_OBJECT_TABLE": "organ_match",
+        "ACTION_TIMING": "BEFORE",
+        "EVENT_MANIPULATION": "INSERT"
+      },
+      {
+        "TRIGGER_NAME": "trg_match_validate_update",
+        "EVENT_OBJECT_TABLE": "organ_match",
+        "ACTION_TIMING": "BEFORE",
+        "EVENT_MANIPULATION": "UPDATE"
+      },
+      {
+        "TRIGGER_NAME": "trg_organ_status_validate",
+        "EVENT_OBJECT_TABLE": "organ",
+        "ACTION_TIMING": "BEFORE",
+        "EVENT_MANIPULATION": "UPDATE"
+      },
+      {
+        "TRIGGER_NAME": "trg_organ_transplant_prevent_delete",
+        "EVENT_OBJECT_TABLE": "organ_transplant_record",
+        "ACTION_TIMING": "BEFORE",
+        "EVENT_MANIPULATION": "DELETE"
+      },
+      {
+        "TRIGGER_NAME": "trg_reservation_validate_insert",
+        "EVENT_OBJECT_TABLE": "active_organ_reservation",
+        "ACTION_TIMING": "BEFORE",
+        "EVENT_MANIPULATION": "INSERT"
+      },
+      {
+        "TRIGGER_NAME": "trg_transplant_insert_guard",
+        "EVENT_OBJECT_TABLE": "transplant",
+        "ACTION_TIMING": "BEFORE",
+        "EVENT_MANIPULATION": "INSERT"
+      },
+      {
+        "TRIGGER_NAME": "trg_transplant_prevent_delete",
+        "EVENT_OBJECT_TABLE": "transplant",
+        "ACTION_TIMING": "BEFORE",
+        "EVENT_MANIPULATION": "DELETE"
+      },
+      {
+        "TRIGGER_NAME": "trg_transplant_prevent_update",
+        "EVENT_OBJECT_TABLE": "transplant",
+        "ACTION_TIMING": "BEFORE",
+        "EVENT_MANIPULATION": "UPDATE"
+      },
+      {
+        "TRIGGER_NAME": "trg_transplant_record_validate_insert",
+        "EVENT_OBJECT_TABLE": "organ_transplant_record",
+        "ACTION_TIMING": "BEFORE",
+        "EVENT_MANIPULATION": "INSERT"
+      },
+      {
+        "TRIGGER_NAME": "trg_waiting_status_validate",
+        "EVENT_OBJECT_TABLE": "waiting_list",
+        "ACTION_TIMING": "BEFORE",
+        "EVENT_MANIPULATION": "UPDATE"
+      }
+    ]
+  },
+  "procedures": {
+    "sql": "SELECT ROUTINE_NAME,ROUTINE_TYPE FROM information_schema.ROUTINES WHERE ROUTINE_SCHEMA=DATABASE() ORDER BY ROUTINE_NAME",
+    "rows": [
+      {
+        "ROUTINE_NAME": "sp_allocate_organ_tx",
+        "ROUTINE_TYPE": "PROCEDURE"
+      },
+      {
+        "ROUTINE_NAME": "sp_record_transplant_tx",
+        "ROUTINE_TYPE": "PROCEDURE"
+      },
+      {
+        "ROUTINE_NAME": "sp_release_allocation_tx",
+        "ROUTINE_TYPE": "PROCEDURE"
+      }
+    ]
+  },
+  "aggregate": {
+    "sql": "SELECT ot.organ_name,COUNT(o.organ_id) AS available_count FROM organ_type ot LEFT JOIN organ o ON ot.organ_type_id=o.organ_type_id AND o.organ_status='AVAILABLE' GROUP BY ot.organ_type_id,ot.organ_name",
+    "rows": [
+      {
+        "organ_name": "Heart",
+        "available_count": "3"
+      },
+      {
+        "organ_name": "Kidney",
+        "available_count": "2"
+      },
+      {
+        "organ_name": "Liver",
+        "available_count": "2"
+      },
+      {
+        "organ_name": "Lung",
+        "available_count": "2"
+      },
+      {
+        "organ_name": "Pancreas",
+        "available_count": "0"
+      }
+    ]
+  },
+  "outbox": {
+    "sql": "SELECT status,COUNT(*) AS events FROM sync_outbox GROUP BY status",
+    "rows": [
+      {
+        "status": "PENDING",
+        "events": "41"
+      },
+      {
+        "status": "DELIVERED",
+        "events": "105"
+      },
+      {
+        "status": "FAILED",
+        "events": "5"
+      }
+    ]
+  },
+  "explain": {
+    "sql": "EXPLAIN SELECT organ_id,organ_type_id,organ_status FROM organ WHERE organ_status='AVAILABLE' AND organ_type_id=1",
+    "rows": [
+      {
+        "id": "1",
+        "select_type": "SIMPLE",
+        "table": "organ",
+        "partitions": null,
+        "type": "ref",
+        "possible_keys": "fk_organ_type,idx_organ_status_type",
+        "key": "idx_organ_status_type",
+        "key_len": "3",
+        "ref": "const,const",
+        "rows": "2",
+        "filtered": 100,
+        "Extra": "Using where; Using index"
+      }
+    ]
+  },
+  "success": true
+}

@@ -1,0 +1,75 @@
+DONATESDONAR ORGAN
+USED IN
+Organ_ID
+Donor _ID
+MATCH
+REGISTRATION
+Registered_IDRequired_Organ
+Registered_Date
+Priority
+Status
+REGISTERED FOR
+PATIENT
+Patient_ID
+Gender
+Blood_Group
+Contact
+HAS
+MEDICAL RECORD
+Record_ID
+Record_DateDiagonosis
+Medical_History
+Name
+DOB
+Match_ID
+Match_Score
+Match_Date
+Match_Status
+EVALUATED BY
+COMPATIBILTIY
+TEST
+Test_ID
+Test_Date
+Blood_Group_Result
+HLA_result
+Overall_Result
+TRANSPLANT
+Transplant_ID
+Transplant_Date
+Outcome
+Follow_up_status
+PERFORMED BY
+TRANSPLANT
+CENTRE
+Centre_ID
+Centre_Name
+Contact_Number
+Location
+License_No
+Name
+Contact
+Donor_Type
+Blood_Group
+DOB
+Organ_Type
+Status
+Condition
+Retrival_Date
+Blood_Group
+Test_Date
+Address
+Current_Status
+1
+M
+1
+1
+M
+M
+M
+1
+1
+1
+M
+M
+M
+1

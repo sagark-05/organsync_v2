@@ -1,0 +1,610 @@
+{
+  "src\\app\\globals.css": {
+    "sha256": "be294a501732f502d0122b75e3114ae83cff80e7e5c65627c4bbc31664a752cf",
+    "lines": 15
+  },
+  "src\\app\\layout.jsx": {
+    "sha256": "47e9a640c551fc8c194fb659e4f8a3456a1c8e3b312392a3527bdffd74c177b5",
+    "lines": 14
+  },
+  "src\\app\\page.jsx": {
+    "sha256": "dd45e97d2d85187ebda3c0524729374e220412531fdc367f9023c3ac21493362",
+    "lines": 29
+  },
+  "src\\app\\database-demo\\page.jsx": {
+    "sha256": "4d69cfaf8fb72d665acf74b19f94afbeef31d4443422c5103493a32aaa0555e1",
+    "lines": 3
+  },
+  "src\\app\\database-sync\\page.jsx": {
+    "sha256": "ae4f8b38d57a434ca8a61c68f9ad56a311a2b8d48a97f98c8e5c3d2c043a3c6a",
+    "lines": 2
+  },
+  "src\\app\\donors\\page.jsx": {
+    "sha256": "ab0707b14524ab8378e9d68927889780d351ba7c2b0364ff48c886134e3061ab",
+    "lines": 3
+  },
+  "src\\app\\matching\\page.jsx": {
+    "sha256": "4a5c20378d7cbf3a7f24aca917f9f23cbe946ec0ae868032e36e55082abb3b5a",
+    "lines": 3
+  },
+  "src\\app\\organs\\page.jsx": {
+    "sha256": "4e86281e8ced99a98b51908b53aa1780836431fbf30fae90cf7e53afa4353615",
+    "lines": 3
+  },
+  "src\\app\\patients\\page.jsx": {
+    "sha256": "eae77d23a940a926a0910d1266a8f5c3582902aa192b5f2ef7aa4411789947a3",
+    "lines": 3
+  },
+  "src\\app\\transplants\\page.jsx": {
+    "sha256": "84ab736af6213efae913c06513077b39dd698c8d3b45b8ad3c392e05ec7b937d",
+    "lines": 3
+  },
+  "src\\app\\waiting-list\\page.jsx": {
+    "sha256": "da9a1656a003609a5a0f3afd80030bd2c9fb28f111ff0c2b9990b42921395e61",
+    "lines": 3
+  },
+  "src\\app\\api\\allocations\\route.js": {
+    "sha256": "f97e62bfc6fe905e75dfce9344484ad46db51ecad1607d6d6feb1de54eb2d240",
+    "lines": 5
+  },
+  "src\\app\\api\\compatibility-tests\\route.js": {
+    "sha256": "a7222099ef02f1e7b6ebca01dd0215fa80bb62d843f2dc03f5de2aa2e956dcbb",
+    "lines": 5
+  },
+  "src\\app\\api\\database-demo\\route.js": {
+    "sha256": "6a1c513bca6ca5c02a2b431e1359eddbfa6ca32fbbc49156f0157957c066f9c4",
+    "lines": 15
+  },
+  "src\\app\\api\\database-sync\\route.js": {
+    "sha256": "256cf069e22f8179de798ace4d1592f74132992f29cbb95222a18820db181a5f",
+    "lines": 3
+  },
+  "src\\app\\api\\donors\\route.js": {
+    "sha256": "35d8415312da7ba6aa320457f996504e48ccef8566be6c1a57f65751213a8df8",
+    "lines": 5
+  },
+  "src\\app\\api\\follow-ups\\route.js": {
+    "sha256": "53533c6ac9ebdfb005826737c0cd2567af80820651777783a7f7e7873b4af27b",
+    "lines": 5
+  },
+  "src\\app\\api\\health\\route.js": {
+    "sha256": "e3dbfd04ae9409b2a4804677e6ce0277f0a0f0da41d754af2f6891be0d0cae32",
+    "lines": 22
+  },
+  "src\\app\\api\\matches\\route.js": {
+    "sha256": "3edeadcea210497b09f498692f70d03717f1c92b7bbc7dc1c0890fe3c202865b",
+    "lines": 5
+  },
+  "src\\app\\api\\organs\\route.js": {
+    "sha256": "1818b606c1077744f087de7938e75b46d7541c996b37efc85b00c873cb4ec8de",
+    "lines": 5
+  },
+  "src\\app\\api\\patients\\route.js": {
+    "sha256": "178d3d0c874418856a362522fa4b744c602eb850ec6d8dee051a60ba8e71ddc3",
+    "lines": 5
+  },
+  "src\\app\\api\\reference-data\\route.js": {
+    "sha256": "de6e31eeda9bce0303d1ba843402d57885aca0da0f0ce34c94aa71c94a7fd3fa",
+    "lines": 9
+  },
+  "src\\app\\api\\transplants\\route.js": {
+    "sha256": "1f36ac2af3895d67b7e4b530905d06e48d1dc13e0539652abe55fcb974b306fa",
+    "lines": 5
+  },
+  "src\\app\\api\\waiting-list\\route.js": {
+    "sha256": "8966e40f92bdf9680f17777ebdb333730785ac86ab01b63e61bca78ac4f6b8cb",
+    "lines": 5
+  },
+  "src\\app\\api\\workflow-options\\route.js": {
+    "sha256": "14e37f3e9786942ddb793dd7878e975e7bba1b78813f2629ab2b1d9d65ad5ac9",
+    "lines": 9
+  },
+  "src\\app\\api\\allocations\\[id]\\route.js": {
+    "sha256": "75869774451f901368a0adf6dd50e7f5d492d0478fa8cea25557178470976820",
+    "lines": 5
+  },
+  "src\\app\\api\\allocations\\[id]\\release\\route.js": {
+    "sha256": "66b673dc30b54dbb43f23b639e08fa16b2aba824f29137ee53f261c3e0be9f77",
+    "lines": 5
+  },
+  "src\\app\\api\\compatibility-tests\\[id]\\route.js": {
+    "sha256": "3baa7126ce3ddeabb0b273a6520908cee5b47175081e172a92343e6aa9082ea5",
+    "lines": 5
+  },
+  "src\\app\\api\\development\\clinician\\route.js": {
+    "sha256": "e183880600f47fb0dc3c954fc06d3ec28ec94b95bb39b411968cb130c3a1d778",
+    "lines": 6
+  },
+  "src\\app\\api\\development\\clinician-session\\route.js": {
+    "sha256": "59e66f7464885787f06c321f591cd0b6a0d09dee3fcabc82b421c2390a57de70",
+    "lines": 6
+  },
+  "src\\app\\api\\donors\\[id]\\route.js": {
+    "sha256": "0183b68773ccb694128af266d6c644f8c653212010d38fadd78d4712c42ef03d",
+    "lines": 5
+  },
+  "src\\app\\api\\follow-ups\\[id]\\route.js": {
+    "sha256": "48e5d25af6772143d4f6c47a9fc70c602386b85281a98fbf103557fdeca1a54e",
+    "lines": 5
+  },
+  "src\\app\\api\\matches\\candidates\\route.js": {
+    "sha256": "3018c5bdbd34f6211a46ad6c25442d379255cb292656e80d826bacb2d538c846",
+    "lines": 5
+  },
+  "src\\app\\api\\matches\\[id]\\route.js": {
+    "sha256": "ab28195fe24350620589209b22eb524a23ad4603816cd8a6a7fa248100281e53",
+    "lines": 5
+  },
+  "src\\app\\api\\organs\\[id]\\route.js": {
+    "sha256": "7ea454d7030b3c2be60acd3e5e2a4e626a2ae3fe4e07a6acfc15bb30759c5296",
+    "lines": 5
+  },
+  "src\\app\\api\\patients\\[id]\\route.js": {
+    "sha256": "9e28110a357412043e5e2c971dcc5f778cdd5a62f09adb6b556e31af0ea87387",
+    "lines": 5
+  },
+  "src\\app\\api\\transplants\\[id]\\route.js": {
+    "sha256": "f2355d2d792b15195cc2abb2f7bf91632d785fc13452d984dc55f1bbf7dfb6c5",
+    "lines": 5
+  },
+  "src\\app\\api\\waiting-list\\[id]\\route.js": {
+    "sha256": "a7de329b5eed42b6c21a7a15d81b66acece59fc987b90454e4bd875d3b74e0b9",
+    "lines": 5
+  },
+  "src\\components\\forms\\DevelopmentAccess.jsx": {
+    "sha256": "58cebf055d62c909caece1af47bf43985f8515a5f0071dcebb62253c5d7d5765",
+    "lines": 20
+  },
+  "src\\components\\forms\\RecordForm.jsx": {
+    "sha256": "f12a01fd58080c27523062789001bdcaca9a58893bf662db09f322c591bb74a0",
+    "lines": 65
+  },
+  "src\\components\\forms\\RecordLookup.jsx": {
+    "sha256": "b7d52b989201a2d20e361956a0f58a957262e090283d1d97c6d4d2b2c2fcd4b9",
+    "lines": 18
+  },
+  "src\\components\\forms\\WorkflowForm.jsx": {
+    "sha256": "4762d1655477152a559471b2eee8691440cd273d4ffa979e2f23280ce57588b1",
+    "lines": 33
+  },
+  "src\\components\\layout\\DatabaseDemoPage.jsx": {
+    "sha256": "d34e47cd640a2a4cd4df02a6de91ff7c395e1a5ab7af74bc7e877ce31b898299",
+    "lines": 22
+  },
+  "src\\components\\layout\\DatabaseSyncPage.jsx": {
+    "sha256": "84737d8f52fe2caccbd39f902e46de6332b9ce0d60cc5ea67f13e90550293364",
+    "lines": 25
+  },
+  "src\\components\\layout\\ManagementPage.jsx": {
+    "sha256": "222c1848aa9f0d0ede04a91b5bdde81d4b629f68817434f32d3aae3eb51ee320",
+    "lines": 93
+  },
+  "src\\components\\layout\\ModuleNavigation.jsx": {
+    "sha256": "41bb1b7cfa376c8dcc933475151909a4904436df684d2637b413194e93669641",
+    "lines": 6
+  },
+  "src\\components\\layout\\TransplantPage.jsx": {
+    "sha256": "7f57a1024d5b498f4e4e9b05da7a4a33aea9e9d6e7102dfb36e86e6c3d8699ce",
+    "lines": 51
+  },
+  "src\\components\\layout\\WorkflowPage.jsx": {
+    "sha256": "7359f3b40902105b138b5bb53ebce0693a0cbb9d566cfec037f165453e163f67",
+    "lines": 117
+  },
+  "src\\components\\tables\\RecordsTable.jsx": {
+    "sha256": "0ead2414e0fa89b35b83af4c9eae96a495ea658dedd0be92c8a9cadda08897d5",
+    "lines": 10
+  },
+  "src\\components\\tables\\WorkflowTable.jsx": {
+    "sha256": "040797fad5dab6bea5e67dba579a18fdd9637c9f4d9403e877e14537ebeff58c",
+    "lines": 6
+  },
+  "src\\lib\\api\\client.js": {
+    "sha256": "ee8ce92fcad346ff393e9a774eea7195628345b295de55b6f1b17ebac32d39c4",
+    "lines": 7
+  },
+  "src\\lib\\api\\phase3e.js": {
+    "sha256": "f81bf023ff239c3f4f74673dc8c0165d6d5a26af7f999528cdb0a4d6fb633362",
+    "lines": 13
+  },
+  "src\\lib\\api\\records.js": {
+    "sha256": "80bfa43314744ae3ff2d64248cdd88327e60d6d761d6a439676756b972550309",
+    "lines": 53
+  },
+  "src\\lib\\api\\sync.js": {
+    "sha256": "61e29e9a72777098dfef1c75a9710765d9559a305c1d42ba0014a04cce19121b",
+    "lines": 14
+  },
+  "src\\lib\\auth\\clinician.js": {
+    "sha256": "daae589f07eef23c91492474f499e6f620ba2857aaa18c4107621bd15aba388b",
+    "lines": 50
+  },
+  "src\\lib\\auth\\development.js": {
+    "sha256": "ac637279bcfc920cf51fdead7ae697057b1dc456a176e06ac46d4ad3e63e2981",
+    "lines": 18
+  },
+  "src\\lib\\database-demo\\catalog.js": {
+    "sha256": "463e80adb6b26889549b6edd5ecb36850f017840b2da9fa14136f0a97715e4b0",
+    "lines": 451
+  },
+  "src\\lib\\db\\mongodb.js": {
+    "sha256": "9efec09dfe39ed45e2bec8106a8cf1d9fabf951d82b1775088c9c78100c4f194",
+    "lines": 24
+  },
+  "src\\lib\\db\\mysql.js": {
+    "sha256": "c9287975471e17c14931469cd53856644c76931a4e21ecc2235b3d619b0f7d7c",
+    "lines": 31
+  },
+  "src\\lib\\repositories\\allocation.repository.js": {
+    "sha256": "fa1dc29a25848e3c339c32b23d88d7279e0044e33fafd2b612d017d7d6a64279",
+    "lines": 44
+  },
+  "src\\lib\\repositories\\compatibility.repository.js": {
+    "sha256": "e53086cd3dc29c2aac69d860213f445872d2f75deed4bb5b84687b3f77152abd",
+    "lines": 15
+  },
+  "src\\lib\\repositories\\demo.repository.js": {
+    "sha256": "c730549491d7e0637f94a659546a13168f6db0ce8b78ea541bdf3ecc3c613172",
+    "lines": 131
+  },
+  "src\\lib\\repositories\\donor.repository.js": {
+    "sha256": "f73c21d194de85d0d82206a1611c85ff263b6ed0c392678bade9199c57229b51",
+    "lines": 2
+  },
+  "src\\lib\\repositories\\follow-up.repository.js": {
+    "sha256": "cc37fb9583f0968620f072947364d9d39425d463a48babf78ed9a37fb07ade44",
+    "lines": 9
+  },
+  "src\\lib\\repositories\\match.repository.js": {
+    "sha256": "b19ebcf855dae78076285053e71b16fca3794cc18a11be0fc89072cda750cf6b",
+    "lines": 28
+  },
+  "src\\lib\\repositories\\organ.repository.js": {
+    "sha256": "8623ecc80396e7264f842c0e3282fe02cfbc0d94731d757a7ef41c868bfb461b",
+    "lines": 2
+  },
+  "src\\lib\\repositories\\patient.repository.js": {
+    "sha256": "6970212c9478e627602666ca5456d71f1fd71862de267bccef70537a4992c535",
+    "lines": 2
+  },
+  "src\\lib\\repositories\\projection.repository.js": {
+    "sha256": "900b73d83956ac07014ebbbce270718febaf3e21c5ad07abbab59085d8b507fd",
+    "lines": 30
+  },
+  "src\\lib\\repositories\\record.repository.js": {
+    "sha256": "8bcc2543c2aad8756fb42f4433e7f47566257c037a8d3b9d3f93b14b471cc5d1",
+    "lines": 74
+  },
+  "src\\lib\\repositories\\sync.repository.js": {
+    "sha256": "a014b7eaa5afe4d459a7172b33a8663cdcb25f2e0511ea8ab37795d9cdc6d984",
+    "lines": 29
+  },
+  "src\\lib\\repositories\\transplant.repository.js": {
+    "sha256": "a7253c22d9278ad948922d2a529bd1a986bde8f9bd691e019a46c762876c5196",
+    "lines": 17
+  },
+  "src\\lib\\repositories\\waiting-list.repository.js": {
+    "sha256": "9480e2d04ba109b96932630cc692bc3ec05088a558a198a9207ea5489d4b0470",
+    "lines": 22
+  },
+  "src\\lib\\repositories\\workflow.repository.js": {
+    "sha256": "7b80fcdddfa176d674dc5f1259c1bd0bd8286c7bcfee2f642c88806a1a7e36e1",
+    "lines": 36
+  },
+  "src\\lib\\services\\allocation.service.js": {
+    "sha256": "bc945ca96e9f158a1f68b5576a0a043221d883429c099b5eb1d963567d12705b",
+    "lines": 61
+  },
+  "src\\lib\\services\\compatibility.service.js": {
+    "sha256": "fc94ed475e8c339bc50fcd3bdf7f1a0a1589e807c1f91a9607bd5e36d02eb4dd",
+    "lines": 30
+  },
+  "src\\lib\\services\\database-demo.service.js": {
+    "sha256": "3023158ad13d6ca59cb2af0f2032e98162301a002ec1f4370aecefd982e8cfba",
+    "lines": 67
+  },
+  "src\\lib\\services\\donor.service.js": {
+    "sha256": "dc1e8e701792bf14070d35cd148fbf4c9bda8446734bdd521d70c150132e3fc2",
+    "lines": 3
+  },
+  "src\\lib\\services\\follow-up.service.js": {
+    "sha256": "8fd929b941bb03a3a6f584ed3c31b7106c2c955ddddb0f50775f6fe451d9ed48",
+    "lines": 25
+  },
+  "src\\lib\\services\\matching.service.js": {
+    "sha256": "ef3980fe16a12a69aaa257905e9a9b32f8c45bd9afa9988bf45a279cad74e3eb",
+    "lines": 60
+  },
+  "src\\lib\\services\\organ.service.js": {
+    "sha256": "75667b277e2ae0d5a40688ac77327d638474e674be16008b3ccfb0d3afcfb0e5",
+    "lines": 3
+  },
+  "src\\lib\\services\\patient.service.js": {
+    "sha256": "024a21e9602b0724e3e93b7df50bc2cb04f1968b2ccaf3e5f6bd7a05e66a4029",
+    "lines": 3
+  },
+  "src\\lib\\services\\record.service.js": {
+    "sha256": "7f6de651d786d417a2cff3a714543ac97a2490a3c341282bd94bf93dff8da0d8",
+    "lines": 58
+  },
+  "src\\lib\\services\\sync.service.js": {
+    "sha256": "402d5cacbbfd7f3992b13f87639211c3263df4cf25c65a77b35516fe14e2c1a9",
+    "lines": 39
+  },
+  "src\\lib\\services\\transplant.service.js": {
+    "sha256": "de9fab739ee308c3e9f02e24b736f4d8d3d3acc7670849bed184aa769380c1ae",
+    "lines": 33
+  },
+  "src\\lib\\services\\waiting-list.service.js": {
+    "sha256": "68ca6e17790adaeecd655bbf182d111e9ff4b800e39965b3d59fb5e62f608074",
+    "lines": 48
+  },
+  "src\\lib\\sync\\atlas-sink.js": {
+    "sha256": "1fd68a5acdb005edaf140e9bd4b08614f3885176d1b2a513df0a5fdd138d22aa",
+    "lines": 31
+  },
+  "src\\lib\\sync\\documents.js": {
+    "sha256": "a9b664651842feebeedb2c088f38f1f9e565600335fa268897bbc974aa29703a",
+    "lines": 54
+  },
+  "src\\lib\\sync\\errors.js": {
+    "sha256": "7956f260e03801081a11bf1aff8a568c13f06853589e5564e19099b14ffba5b2",
+    "lines": 14
+  },
+  "src\\lib\\sync\\outbox.js": {
+    "sha256": "836c4e0d135057768bce1730a1b871aca58769c4fdda85a45c81f78f18116983",
+    "lines": 8
+  },
+  "src\\lib\\sync\\projection-jobs.js": {
+    "sha256": "6b5c944afc42b31412b8051441af281ef638ffaa07cd09dc7aa5351b2d4a36d9",
+    "lines": 93
+  },
+  "src\\lib\\sync\\projection-schema.js": {
+    "sha256": "92196eba9bcedc72b2789e8c4a81a11e2c9f935fcdbb4f548ef9e04fb264f381",
+    "lines": 45
+  },
+  "src\\lib\\sync\\projections.js": {
+    "sha256": "c33ab22b66d932a507eed072cb62327af47cc3eb8258a87b4437cd70c03a9242",
+    "lines": 88
+  },
+  "src\\lib\\sync\\worker.js": {
+    "sha256": "33b50bb7d4d8442b3ddb22044decd820b31f227c951c9e84983c770b566af453",
+    "lines": 46
+  },
+  "src\\lib\\validation\\records.js": {
+    "sha256": "1251cd49a8461cafd74aa52929567f43a874d9244d8ce4c2750b13c04b9a47bb",
+    "lines": 91
+  },
+  "src\\lib\\validation\\transplants.js": {
+    "sha256": "73c22e7b72e9cf0e8b983a8d72cdba140a5446a27e0d5cab4b35271737acb61c",
+    "lines": 33
+  },
+  "src\\lib\\validation\\workflows.js": {
+    "sha256": "6f61e3eefb64de93e2b95a51ad7ec4abf9c8e03c6ae66b66928a877203986a5e",
+    "lines": 76
+  },
+  "tests\\integration\\crud.test.js": {
+    "sha256": "b0b01d0f24c00fed8044ec2beb1ed095f371d2b6aaf703ff21a6b245c066572f",
+    "lines": 86
+  },
+  "tests\\integration\\demo-api.test.js": {
+    "sha256": "53c5ea002f0f1c058fb40b72fa52372e8cca7317577978d867c28b6d1a15a324",
+    "lines": 35
+  },
+  "tests\\integration\\projections.test.js": {
+    "sha256": "ebf442e951e0dddd10af21e0bcdcf6d50e0ac6a62b422cd3659b9cab6d5532b3",
+    "lines": 139
+  },
+  "tests\\integration\\sync.test.js": {
+    "sha256": "6cfecaa3d344fd14c2153f0de49f4e40a833f709fbe3f64aa60a53c5a9287caf",
+    "lines": 121
+  },
+  "tests\\integration\\transplants.test.js": {
+    "sha256": "9efbb62120349ed18b66e02c697927f74d655f30349b3e7231671e11108f3505",
+    "lines": 73
+  },
+  "tests\\integration\\triggers.test.js": {
+    "sha256": "f0b22af8ebb5f17948b432a777944fb599288ace7d5315608a41b7553fbf2efa",
+    "lines": 31
+  },
+  "tests\\integration\\workflows.test.js": {
+    "sha256": "8a9e78c9600efc49b9bcfb1b276b0fdfa74eabeb234bd3099ff781c49112e62c",
+    "lines": 102
+  },
+  "tests\\unit\\projections.test.js": {
+    "sha256": "baf3be07da6c502712e0914952ccf3b06e662396d0220b0601d1a2c5c14073e3",
+    "lines": 33
+  },
+  "tests\\unit\\records.test.js": {
+    "sha256": "a656610a0330b34a9387623c5fa33792798e801df25483c1ed4c656f984a637e",
+    "lines": 92
+  },
+  "tests\\unit\\sync.test.js": {
+    "sha256": "cd5267660a6cf82dd7c52092f2a19921907d5e559f1633babb1c195b2fd8d042",
+    "lines": 72
+  },
+  "tests\\unit\\transplants.test.js": {
+    "sha256": "ec70a8a34ddfeb6d23dce77099b5b82e545542810ddb31e477bcd938b07be656",
+    "lines": 63
+  },
+  "tests\\unit\\workflow-services.test.js": {
+    "sha256": "5085cb6986e211ba79ebf1b3b2e15d2233cd46b8bf10a3672d596c5e5806af38",
+    "lines": 68
+  },
+  "tests\\unit\\workflows.test.js": {
+    "sha256": "c6ca31bf87152db699f9afc655431eb86fcbb2f27506557951db0acd853ee847",
+    "lines": 85
+  },
+  "database\\README.md": {
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "lines": 0
+  },
+  "database\\migrations\\001_schema.sql": {
+    "sha256": "1797c4621f2e30dbbfe52f7c6d8cc43a65adfbbbc6f32fada101de1a84108cd2",
+    "lines": 203
+  },
+  "database\\migrations\\002_constraints.sql": {
+    "sha256": "5d92acef852a4d99d06106c077da093dbfc2feb2c3475866152f6a4e18758055",
+    "lines": 75
+  },
+  "database\\migrations\\003_indexes.sql": {
+    "sha256": "8ad759a253d66b68e9c69c1303799a9cc22b405504f9ea431a91737d628401b0",
+    "lines": 130
+  },
+  "database\\migrations\\004_views.sql": {
+    "sha256": "ad231b81820ddf1613e86bfba89b42d2dd15b8dbf26d3232686f1a94ff036f88",
+    "lines": 219
+  },
+  "database\\migrations\\005_triggers.sql": {
+    "sha256": "66f329b1aece4f4ce093def40906e9d9e22c0b65f7e88f01ce1d4ff8afa77a63",
+    "lines": 338
+  },
+  "database\\migrations\\006_procedures.sql": {
+    "sha256": "bddf6115e055e9be48aec1f26960cc2c2f9120e42c7bd75cef9026970fb2f64c",
+    "lines": 473
+  },
+  "database\\migrations\\007_phase3e_integrity_proposal.sql": {
+    "sha256": "6eb960882363fe57237ae19085c43f83bce25110b27886318793dd55d0fa742f",
+    "lines": 464
+  },
+  "database\\migrations\\008_phase3e_reconciliation_proposal.sql": {
+    "sha256": "0c2ca4b6be8fed188b301406c3dab0694ea25bc9f6381584b5c92c4d35bd7118",
+    "lines": 61
+  },
+  "database\\queries\\aggregations.sql": {
+    "sha256": "e1dc138ae242d1ef580833c7af58ff60f8d805eafe5f7bc9df864da56f87b2db",
+    "lines": 46
+  },
+  "database\\queries\\ctes.sql": {
+    "sha256": "72b4a4d84147690fc3864e6949ea3dc6d3a0f1cf75602566d25091528534ba22",
+    "lines": 33
+  },
+  "database\\queries\\joins.sql": {
+    "sha256": "601f7b56ff5087da809bcd0c1e70cf6acadd6552df56a52a1b0dcb55315f7a5d",
+    "lines": 32
+  },
+  "database\\queries\\subqueries.sql": {
+    "sha256": "b44c05d5096ea996fe3606ab60a51a943d78ad9b2fab7f02a429a17714bb323c",
+    "lines": 29
+  },
+  "database\\queries\\transactions.sql": {
+    "sha256": "a229979ff5e2ba367153dd2cbbe0e79866ab3c5c89529fd5789f7f462c2b57fe",
+    "lines": 89
+  },
+  "database\\seeds\\demo_data.sql": {
+    "sha256": "4a707a103f71f86f687472b86523495f7b519ac31fda69ace1eff939ebd7b819",
+    "lines": 150
+  },
+  "docs\\01-project-overview.md": {
+    "sha256": "7a7e7f12fbfeabf4d29febcee6286345296931fddfb152b472f50326e07dcb88",
+    "lines": 91
+  },
+  "docs\\02-requirements.md": {
+    "sha256": "b9d683cb538b1d92b9e5ba258d65338ae0806646cbe34eaee2edcb395a5d20d7",
+    "lines": 88
+  },
+  "docs\\03-database-design.md": {
+    "sha256": "98f42fd808acae52ced5a1ef6751a5357e6a5d0b3f70ae69519ed32e12ca35ba",
+    "lines": 73
+  },
+  "docs\\04-er-diagram.md": {
+    "sha256": "3d83130324936c2100d7480426eced23dbc5cef73f03af689a0e8cb0e5ded99d",
+    "lines": 85
+  },
+  "docs\\05-normalization.md": {
+    "sha256": "dc0937688c3aee880a5442f27d9838baaa048fa1e5ea9479cde55237ff2d2e1c",
+    "lines": 74
+  },
+  "docs\\06-business-rules.md": {
+    "sha256": "cf34e4d03e5b2b998591469aa2e8fdb33718e3b1bedecea24caad314a03a45de",
+    "lines": 96
+  },
+  "docs\\07-sql-concepts.md": {
+    "sha256": "5219796a1446f93b4a411d0f17f10beed678be119b3fb4484db2b2d0329766ab",
+    "lines": 112
+  },
+  "docs\\08-system-architecture.md": {
+    "sha256": "1850139c27bad69cde321b06d56d9e1340a1b4e84441f59123d120c976da569b",
+    "lines": 118
+  },
+  "docs\\09-implementation-plan.md": {
+    "sha256": "57b608540bfc673b0d7eae53353fcd252ba716a274e0b4e78e77676d47826421",
+    "lines": 116
+  },
+  "docs\\10-testing-and-demo.md": {
+    "sha256": "c1f7865e4744ff524b90f25cff8aac1e4e8af2d5b0a42022b4388dd1bd2f25a5",
+    "lines": 123
+  },
+  "docs\\architecture.md": {
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "lines": 0
+  },
+  "docs\\demo-guide.md": {
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "lines": 0
+  },
+  "docs\\er-diagram.md": {
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "lines": 0
+  },
+  "docs\\normalization.md": {
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "lines": 0
+  },
+  "scripts\\apply-migration008.mjs": {
+    "sha256": "9d13fb6bfc945519b50d1c7e45bb3a59752a93349f3b0ed50ff8cf5d1df66ddb",
+    "lines": 92
+  },
+  "scripts\\migrate.mjs": {
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "lines": 0
+  },
+  "scripts\\phase3f-preservation.mjs": {
+    "sha256": "18a3c2f2c45d100c217a49bc766b96331e255d2e8e0e05c21750304f50a732b8",
+    "lines": 39
+  },
+  "scripts\\phase3g-api-checks.mjs": {
+    "sha256": "203e10ccd9ca00fd0db63f21d612a562367286c6ce1d99bf361afc1ae45eb746",
+    "lines": 25
+  },
+  "scripts\\phase3g-server.mjs": {
+    "sha256": "1fa66930d0368f7a37fb9cec3c36688134734d2eb77a52c402c19b3f1270c672",
+    "lines": 13
+  },
+  "scripts\\seed.mjs": {
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "lines": 0
+  },
+  "scripts\\sync-backfill.mjs": {
+    "sha256": "c28ed5572f3885b84a4ca6c3d014cb7d3e3747ce2acd17a918e4d709cb30ab18",
+    "lines": 9
+  },
+  "scripts\\sync-reconcile.mjs": {
+    "sha256": "6931814d07968b6f805fd0b845e20a23b81457efa4899c8ca64207f535897bd2",
+    "lines": 15
+  },
+  "scripts\\sync-worker.mjs": {
+    "sha256": "5484e7eda0dacb870108896ffa63eb0d12d05260917871c6982c744a6d9e60b9",
+    "lines": 13
+  },
+  "scripts\\verify-browser-projection.mjs": {
+    "sha256": "806a3f23389fd1336848f9e0947b32602342aec057f4d888c708730bddf3dbbb",
+    "lines": 26
+  },
+  "scripts\\verify-migration008.mjs": {
+    "sha256": "98b6595b85da2e845310338b034a769518b5b27c2b461d713ab03cf135ad9d45",
+    "lines": 36
+  },
+  "scripts\\verify-phase3f.mjs": {
+    "sha256": "3c55815e84c732decf3869448be296645b3b5850649d3fb7bf86f025a93f19b6",
+    "lines": 17
+  },
+  "scripts\\verify-phase3g.mjs": {
+    "sha256": "1017b1ec3e37d468d90008b3622a4d016a79230fe4ed4ac2d1e9e11a2073e6de",
+    "lines": 56
+  },
+  "scripts\\verify-projections.mjs": {
+    "sha256": "8b96d72f9d1de9b67b8015f7dbd374d52a47b8056a304166809d2822a1d51372",
+    "lines": 28
+  }
+}

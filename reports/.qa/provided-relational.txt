@@ -1,0 +1,18 @@
+DONAR
+DONAR_ID NAME DOB Blood_Group Donor_Type Contact
+PATIENT
+Patient_ID Name Address DOB Gender Blood_Group Contact
+ORGAN
+ORGAN_ID Organ_Type Blood_Group Retrieval_Date Condition Status Donor_ID
+REGISTRATION
+Registration_ID Registration_Date Required_Organ Priority Status Patient_ID
+MEDICAL_RECORD
+Record_ID Medical_History Current_Status Diagnosis Record_Date Patient_ID
+TRANSPLANT_CENTRE
+Centre_ID Centre_Name Location License_No Contact_Number
+MATCH
+Match_ID Match_Score Match_Status Match_Date Registered_ID Organ_ID
+COMPATIBILITY_TEST
+Test_ID Test_Date Overall_Result HLA_result Blood_Group_Reult Match_ID
+TRANSPLANT
+Transplant_ID Transplant_Date Outcome Follow_up_status Organ_ID Centre_ID

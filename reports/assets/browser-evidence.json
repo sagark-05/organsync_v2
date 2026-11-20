@@ -1,0 +1,19 @@
+{
+  "capturedDate": "2026-11-17",
+  "mode": "existing production build, read-only navigation",
+  "files": [
+    "frontend-home.png",
+    "frontend-donors.png",
+    "frontend-patients.png",
+    "frontend-organs.png",
+    "frontend-matching.png",
+    "frontend-compatibility.png",
+    "frontend-allocations.png",
+    "frontend-transplants.png",
+    "frontend-follow-ups.png",
+    "frontend-database-sync.png",
+    "frontend-database-demo.png"
+  ],
+  "mutationsExecuted": false,
+  "authorizationFieldsEntered": false
+}

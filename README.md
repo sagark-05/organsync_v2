@@ -8,6 +8,13 @@ The project demonstrates relational database design, SQL constraints, triggers, 
 
 > **Disclaimer:** OrganSync V2 is an educational demonstration. Its compatibility and allocation logic is simplified and is not clinically validated for real-world medical decisions.
 
+## Team Members
+
+| Name | SRN |
+|---|---|
+| S Vinyas Gangadkar | PES2UG24CS418 |
+| Sagar K | PES2UG24CS424 |
+
 ## Table of Contents
 
 1. [Project Overview](#1-project-overview)
