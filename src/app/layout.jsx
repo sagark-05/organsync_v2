@@ -1,3 +1,4 @@
+import ModuleNavigation from "@/components/layout/ModuleNavigation";
 import "./globals.css";
 
 export const metadata = {
@@ -8,7 +9,12 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en" data-scroll-behavior="smooth">
-      <body>{children}</body>
+      <body>
+        <div className="app-layout">
+          <ModuleNavigation />
+          <div className="app-content">{children}</div>
+        </div>
+      </body>
     </html>
   );
 }

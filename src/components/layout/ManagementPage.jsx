@@ -1,7 +1,5 @@
 "use client";
 
-import Link from "next/link";
-import ModuleNavigation from "./ModuleNavigation";
 import { useEffect, useRef, useState } from "react";
 import RecordForm, { labels } from "@/components/forms/RecordForm";
 import RecordsTable from "@/components/tables/RecordsTable";
@@ -69,8 +67,7 @@ export default function ManagementPage({ entity }) {
   }
   const filterValues = entity === "organ" ? ORGAN_STATUSES : BLOOD_GROUPS;
   return <div className="shell management">
-    <header><Link className="brand" href="/"><span className="mark" aria-hidden="true">+</span>OrganSync <small>V2</small></Link><ModuleNavigation current={plural} /></header>
-    <main>
+    <main id="main-content" tabIndex={-1}>
       <div className="management-heading"><div><p className="eyebrow">REGISTRY MANAGEMENT</p><h1>{title}</h1><p>Manage fictional demonstration records. This educational system is not for clinical decisions.</p></div><button className="button" disabled={!canWrite || busy || loading} onClick={() => { setSelection({ mode: "create", record: null }); setError(""); setMessage(""); }}>Add {entity}</button></div>
       <aside className="write-notice"><strong>{references.developmentWritesEnabled ? "Local development writes enabled" : "Read-only mode"}</strong><p>Production authentication and role-based authorization are pending. {references.developmentWritesEnabled ? "Enter your development token to enable forms. It stays in this page’s memory." : "Writes require an explicit local development setting and a server-configured token."}</p>{references.developmentWritesEnabled && <label htmlFor="development-token">Development token<input id="development-token" type="password" autoComplete="off" value={token} onChange={e => setToken(e.target.value)} /></label>}</aside>
       {referenceError && <p className="feedback error" role="alert">Reference data: {referenceError}</p>}
@@ -88,6 +85,6 @@ export default function ManagementPage({ entity }) {
       </section>
       {selection && selection.mode !== "delete" && <section className="record-panel" ref={panel} tabIndex={-1} aria-labelledby="record-panel-heading"><h2 id="record-panel-heading">{selection.mode === "details" ? "Record details" : selection.mode === "create" ? `Add ${entity}` : `Edit ${entity}`}</h2>{selection.mode === "details" ? <><dl className="record-details">{Object.entries(selection.record).map(([key, value]) => <div key={key}><dt>{labels[key] || key}</dt><dd>{value === null ? "—" : String(value)}</dd></div>)}</dl><button onClick={() => setSelection(null)}>Close details</button></> : <RecordForm key={`${selection.mode}-${selection.record?.[`${entity}_id`] || "new"}`} entity={entity} record={selection.record} references={references} disabled={!canWrite} busy={busy} onSave={data => mutate(selection.mode === "create" ? "POST" : "PATCH", data)} onCancel={() => setSelection(null)} />}</section>}
       {selection?.mode === "delete" && <dialog ref={dialog} onCancel={event => { if (busy) event.preventDefault(); else setSelection(null); }} aria-labelledby="delete-heading"><h2 id="delete-heading">Delete this {entity}?</h2><p>{selection.record.full_name || `${selection.record.organ_name} from ${selection.record.donor_name}`} (#{selection.record[`${entity}_id`]})</p><p>Deletion is permanent. The server will reject deletion if dependent records exist.</p>{error && <p role="alert" className="feedback error">{error}</p>}<div className="actions"><button autoFocus disabled={busy} onClick={() => { setSelection(null); setError(""); }}>Cancel</button><button className="danger" disabled={busy || !canWrite} onClick={() => mutate("DELETE")}>{busy ? "Deleting…" : "Confirm deletion"}</button></div></dialog>}
-    </main><footer><Link href="/">← Home</Link><span>OrganSync V2 · Fictional demonstration data only</span></footer>
+    </main><footer><span>OrganSync V2 · Fictional demonstration data only</span></footer>
   </div>;
 }
